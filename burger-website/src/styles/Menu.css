@@ -1,0 +1,87 @@
+.menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.menu .menuTitle {
+  font-size: 40px;
+}
+
+.menu h6 {
+  font-size: 16px;
+}
+
+.menu p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.menuList {
+  width: 70vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  place-items: center;
+}
+
+.menuItem {
+  border-radius: 15px;
+  width: 300px;
+  height: auto;
+  margin: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 10px;
+}
+.menuItem:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.menuItem img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cardBtn {
+  border: none;
+  width: 30%;
+  padding: 10px 20px;
+  background-color: brown;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.cardBtn:hover {
+  background-color: rgb(182, 58, 58);
+}
+
+@media only screen and (max-width: 1300px) {
+  .menuList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menuList {
+    grid-template-columns: 1fr;
+  }
+}

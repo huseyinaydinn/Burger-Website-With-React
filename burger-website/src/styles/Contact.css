@@ -1,0 +1,60 @@
+.contactContainer {
+  display: flex;
+  align-items: center;
+}
+
+.bannerContainer {
+  padding: 20px 10px;
+}
+
+.bannerContainer img {
+  width: 45vw;
+}
+
+.formWrapper {
+  width: 40vw;
+  padding: 20px 10px;
+  margin-left: 20px;
+}
+
+.contactForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contactForm input,
+textarea {
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid grey;
+  font-size: 20px;
+}
+
+.contactForm textarea {
+  resize: none;
+  font-size: 14px;
+}
+
+.contactForm input::placeholder,
+textarea::placeholder {
+  color: grey;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contactForm label {
+  color: black;
+}
+
+.contactBtn {
+  width: 150px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+}
